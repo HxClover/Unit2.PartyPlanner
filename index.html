@@ -3,9 +3,46 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Party Planner</title>
+		<title>Unit2.EventPlanner</title>
 		<link rel="stylesheet" href="styles.css" />
-		<script src="index.js"></script>
 	</head>
-	<body></body>
+	<body>
+		<h1>Event Planner</h1>
+		<div id="add-event-form">
+			<h3>Add Event</h3>
+			<form id="event-form">
+				<label for="eventName">Event Name:</label>
+				<input type="text" id="eventName" name="eventName" required />
+
+				<label for="eventDescription">Event Description:</label>
+				<textarea
+					id="eventDescription"
+					name="eventDescription"
+					rows="1"
+					required
+				></textarea>
+
+				<label for="eventDate">Event Date:</label>
+				<input
+					type="datetime-local"
+					id="eventDate"
+					name="eventDate"
+					required
+				/>
+
+				<label for="eventLocation">Event Location:</label>
+				<input
+					type="text"
+					id="eventLocation"
+					name="eventLocation"
+					required
+				/>
+
+				<button type="submit">Add Event</button>
+			</form>
+		</div>
+		<!-- Display events -->
+		<div id="events-container"></div>
+		<script src="index.js"></script>
+	</body>
 </html>
